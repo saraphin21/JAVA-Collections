@@ -15,15 +15,14 @@ private StreamsMapCollector()
 	String s1 = "";
 StringBuilder sb = new StringBuilder();
 	
-				List<String> list = new ArrayList<>();
+	List<String> list = new ArrayList<>();
 	        list.add("foo");
 	        list.add("bar");
 	        list.add("baz");
-	    String result = 
-	 list
+	    
+	 String result =list
 	 .stream()
-	 .map(s->s1.concat(s+" "))
-	.collect(Collectors.joining());
+	.collect(Collectors.joining(","));
 		 System.out.println(result);
 		 
 	
